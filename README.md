@@ -2,7 +2,7 @@
 
 自宅回線のボトルネックを推測ではなく実測で特定するためのツール。CLI と GUI の2本立て。Python製、Windows向け。
 
-このリポジトリはソースコードのみを公開しています。`python build.py` で `network_diag.exe` / `network_diag_gui.exe` を各自ビルドしてください(依存: Python 3、`pip install pyinstaller` ほか各タブが使うライブラリ)。
+このリポジトリはソースコードのみを公開しています。ビルド済みexeは [Releases](../../releases) からダウンロードできます。自分でビルドする場合は `python build.py` で `network_diag.exe` / `network_diag_gui.exe` を生成してください(依存: Python 3、`pip install pyinstaller` ほか各タブが使うライブラリ)。
 
 ## 使い方
 
