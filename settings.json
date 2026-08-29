@@ -1,0 +1,61 @@
+{
+  "general": {
+    "contract_mbps": 1000,
+    "theme": "dark",
+    "window_width": 1500,
+    "window_height": 780
+  },
+  "targets": {
+    "primary": "1.1.1.1",
+    "secondary": "8.8.8.8",
+    "speed_host": "speed.cloudflare.com"
+  },
+  "ping": {
+    "interval_s": 1.0,
+    "loss_alert_streak": 3,
+    "graph_points": 80,
+    "warn_ms": 60
+  },
+  "throughput": {
+    "duration_s": 8,
+    "parallel_streams": 15,
+    "chunk_mb": 4
+  },
+  "bufferbloat": {
+    "idle_count": 10,
+    "load_streams": 6,
+    "load_duration_s": 10
+  },
+  "services": {
+    "workers": 2,
+    "trials": 5,
+    "good_ms": 30,
+    "warn_ms": 70
+  },
+  "watchdog": {
+    "interval_s": 5.0,
+    "timeout_streak": 3,
+    "spike_factor": 3.0,
+    "spike_min_delta_ms": 20
+  },
+  "trend": {
+    "interval_min": 30,
+    "sample_duration_s": 3,
+    "min_samples": 3
+  },
+  "lanscan": {
+    "ping_workers": 64,
+    "ping_timeout_ms": 500,
+    "vendor_lookup": true
+  },
+  "capture": {
+    "save_pcap": false,
+    "top_limit": 30
+  },
+  "advanced": {
+    "ipinfo_enabled": true,
+    "mtu_probe_low": 1200,
+    "mtu_probe_high": 1472,
+    "jitter_samples": 20
+  }
+}
